@@ -1,0 +1,188 @@
+.box{
+    height: 100%;
+    width: 95%;
+    border-left-width: thick !important;
+    border-left-style: solid;
+}
+
+.x1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2%;
+}
+.x2{
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    text-align: center;
+}
+#box1{
+    border-left-color: blue;
+}
+#box2{
+    border-left-color: green;
+}
+#box3{
+    border-left-color: orange;
+}
+#box4{
+    border-left-color: purple;
+}
+.box2{
+    width: 97%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+#graph1{
+    width: 200px;
+    height: 250px;
+    margin-top: 50px;
+}
+#checked-in{
+    background-color: green;
+    width: 200px;
+    height: 100px;
+    border-radius: 100px 100px 0 0;
+    display: flex;
+    justify-self: center;
+}
+#pending{
+    background-color: orange;
+    width: 200px;
+    height: 100px;
+    border-radius: 0 0 100px 100px;
+    display: flex;
+    justify-self: center;
+}
+.a{
+    display: flex;
+    justify-self: center;
+    color: green;
+}
+.b{
+    display: flex;
+    justify-content: center;
+    color: orange;
+}
+.box3{
+    width: 97%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+#graph2{
+    height: 250px;
+    width: 940px;
+    border-left-style: solid;
+    border-left-color: grey;
+    border-bottom-style: solid;
+    border-bottom-color: grey;
+    gap: 20px;
+    display: flex;
+}
+#graph2-overflow{
+    display: flex;
+    flex-direction: column;
+    overflow-x: auto;
+}
+#graph2-all{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+#numbers{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    line-height: 0;
+}
+.tables{
+    width: 80px;
+    height: 100%;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+.checked-in{
+    background-color: green;
+    width: 100%;
+}
+.pending{
+    background-color: orange;
+    width: 100%;
+}
+#table1 .checked-in{
+    height: 50%;
+    
+}
+#table1 .pending{
+    height: 0px;
+}
+#table2 .checked-in{
+    height: 0;
+}
+#table2 .pending{
+    height: 50%;
+}
+#table3 .checked-in{
+    height: 50%;
+}
+#table3 .pending{
+    height: 50%;
+}
+#table4 .checked-in{
+    height: 0%;
+}
+#table4 .pending{
+    height: 50%;
+}
+#table5 .checked-in{
+    height: 100%;
+}
+#table5 .pending{
+    height: 0%;
+}
+#table6 .checked-in{
+    height: 0%;
+}
+#table6 .pending{
+    height: 50%;
+}
+#table7 .checked-in{
+    height: 0%;
+}
+#table7 .pending{
+    height: 50%;
+}
+#table8 .checked-in{
+    height: 50%;
+}
+#table8 .pending{
+    height: 0%;
+}
+#tables{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    
+}
+ol{
+    width: 98.5%;
+    padding: 20px;
+}
+#title{
+    line-height: 5px;
+}
+#main{
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+}

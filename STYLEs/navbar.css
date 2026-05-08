@@ -1,0 +1,22 @@
+#logo{
+    line-height: 0;
+    padding-left: 1%;
+}
+.hover:hover{
+    background-color:aliceblue
+}
+#user{
+    display: flex;
+    flex-direction: column;
+    line-height: 5px;
+}
+#user-main{
+    display: flex;
+    flex-direction: row;
+    height: 5vh;
+    gap: 10px;
+}
+#log-out{
+    display: flex;
+    align-items: center;
+}
