@@ -1,0 +1,18 @@
+.button{
+    border: none;
+    background: none;
+}
+.red{
+    color: red !important;
+}
+.checked-in{
+    background-color: green;
+    color: white;
+}
+.pending{
+    background-color: orange;
+    color: white;
+}
+.x{
+    line-height: 20px;
+}
