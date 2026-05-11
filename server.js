@@ -25,6 +25,17 @@ app.get("/guests", (req, res) => {
   })
 })
 
+app.delete("/guests/:phone", (req, res) => {
+  const { phone } = req.params;
+  db.query("DELETE FROM guests WHERE guest_phone = ?", [phone], (err, result) => {
+    if (err) {
+      console.error(err);
+      return res.status(500).json({ error: "Erro ao deletar" });
+    }
+    res.json({ message: "Personagem removido com sucesso!" });
+  });
+});
+
 app.listen(3000, () =>
   console.log("Servidor rodando em http://localhost:3000/guest-management.html")
 )

@@ -24,6 +24,7 @@ function show_list(){
 
         const phone = document.createElement('div')
         phone.textContent = g[id].guest_phone
+        const phone2 = g[id].guest_phone
         phone.classList.add('col-2')
         div.appendChild(phone)
 
@@ -53,6 +54,12 @@ function show_list(){
         const trash = document.createElement('button')
         trash.classList.add('bi', 'bi-trash', 'red', 'button')
         actions.appendChild(trash)
+        trash.addEventListener('click', function(){
+           fetch(`http://localhost:3000/guests/${phone2}`, {
+            method: "DELETE",
+            headers: { "Content-Type": "application/json" }
+          });
+        })
 
         if(g.length < id){
           console.log(`All guests added sucessfully! ${id} total guests.`)
@@ -62,5 +69,8 @@ function show_list(){
           show_list();
         }
 })
+}
+function delete_guest(){
+
 }
 show_list();
